@@ -68,7 +68,8 @@ int main(int argc, const char * argv[])
             int prime_check;
             prime_check = 0; //if prime_check becomes 1 then it is not a prime number Magick Magick
             int counter;
-            counter = 0;
+            counter = 1;
+            printf("1, ");
             for (int i = 2; counter < a; i++)
             {
                 prime_check = 0;
