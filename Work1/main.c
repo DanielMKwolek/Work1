@@ -14,7 +14,7 @@ int main(int argc, const char * argv[])
     again = 0;
     while (again == 0)
     {
-        printf("Please enter the type of Math you would like to do:\n 1: Add\n 2: Subtract\n 3: Multiply\n 4: List \"n\" odd numbers\n 5: List first \"n\" prime numbers\n: ");
+        printf("Please enter the type of Math you would like to do:\n 1: Add\n 2: Subtract\n 3: Multiply\n 4: List \"n\" odd numbers\n 5: List first \"n\" prime numbers (Trial Division)\n: ");
         int Math;
         Math = 0;
         while (Math < 1 || Math > 5)
@@ -24,7 +24,7 @@ int main(int argc, const char * argv[])
             printf("Your input was accepted as \"%d\"\n", Math);
             if (Math < 1 || Math > 5)
             {
-                printf("\nPlease use a valid input of\n 1 for Addition\n 2 for Subtraction\n 3 for Multiplication\n 4 for Listing odds\n 5 for Listing primes\n: ");
+                printf("\nPlease use a valid input of\n 1 for Addition\n 2 for Subtraction\n 3 for Multiplication\n 4 for Listing odds\n 5 for Listing primes (Trial Division)\n: ");
             }
         }
         if (Math > 0 && Math < 4)
