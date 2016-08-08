@@ -57,10 +57,41 @@ int main(int argc, const char * argv[])
             }
             printf("\n");
         }
-        
-            printf("Would you like to do another operation?\n 0: Yes\n 1: No\n: ");
-            again = -1;
-            while (again < 0 || again > 1)
+        else if (Math == 5)
+        {
+            int a;
+            printf("For the next operation, invalid inputs will default to 0\nInt and Char mixes will truncate at first non int\n");
+            printf("How many prime numbers would you like to print?\n: ");
+            printf("before: %d\n", a);
+            scanf("%d", &a);
+            printf("after: %d\n", a);
+            int prime_check;
+            prime_check = 0; //if prime_check becomes 1 then it is not a prime number Magick Magick
+            int counter;
+            counter = 0;
+            for (int i = 2; counter < a; i++)
+            {
+                prime_check = 0;
+                for (int j = i-1; j > 1; j--)
+                {
+                    int h = (i % j);
+                    switch (h)
+                    {
+                        case (0): prime_check = 1; break;
+                        default: break;
+                    }
+                }
+                if (prime_check == 0)
+                {
+                    printf("%d, ", i);
+                    counter++;
+                }
+            }
+            printf("\n");
+        }
+        printf("Would you like to do another operation?\n 0: Yes\n 1: No\n: ");
+        again = -1;
+        while (again < 0 || again > 1)
         {
             fpurge(stdin);
             scanf("%d", &again);
